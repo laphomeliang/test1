@@ -1,0 +1,24 @@
+name: test
+on:
+  push:
+    branches:
+      - master
+jobs:
+  action:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: install
+        run: |
+          npm install
+          npm run build
+      - name: deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          username: 'laphoneliang'
+          passward: 'buffon013------'
+          branch: 'master'
+          folder: 'dist'
+          silent: true
+          workspace: 'src/project/location'
