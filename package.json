@@ -1,8 +1,8 @@
 {
-  "name": "test",
+  "name": "test1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://laphomeliang.github.io/test",
+  "homepage": "https://laphomeliang.github.io/test1",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
